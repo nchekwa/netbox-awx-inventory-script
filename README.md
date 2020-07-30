@@ -25,7 +25,7 @@ ansible-inventory -v --list -i /opt/scripts/netbox_inventory.yml
 ![Screenshot](awx_inventory.png)
 
 
-# Output exemple wen we run script from bash level:
+# Output example when we run playbook from bash level:
 ```bash
 ansible-inventory -v --list -i /opt/scripts/netbox_inventory.yml
 ```
