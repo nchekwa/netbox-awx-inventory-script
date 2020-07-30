@@ -30,7 +30,7 @@ ansible-inventory -v --list -i /opt/scripts/netbox_inventory.yml
 ansible-inventory -v --list -i /opt/scripts/netbox_inventory.yml
 ```
 
-
+```json
 Using /etc/ansible/ansible.cfg as config file
 Fetching: http://192.168.254.90/api/dcim/sites/?limit=0
 Fetching: http://192.168.254.90/api/dcim/regions/?limit=0
@@ -42,7 +42,6 @@ Fetching: http://192.168.254.90/api/dcim/device-types/?limit=0
 Fetching: http://192.168.254.90/api/dcim/manufacturers/?limit=0
 Fetching: http://192.168.254.90/api/dcim/devices/?limit=0
 Fetching: http://192.168.254.90/api/virtualization/virtual-machines/?limit=0
-```json
 {
     "_meta": {
         "hostvars": {
