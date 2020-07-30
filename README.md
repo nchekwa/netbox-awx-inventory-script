@@ -1,4 +1,4 @@
-# Create inventory in Ansble Tower (AWX) based on default netbox ansbile script
+# Create inventory in Ansible Tower (AWX) based on default netbox Ansbile plugin
 
 1) Put script ie. in /opt/scripts/pb.netbox_inventory.yml 
 
