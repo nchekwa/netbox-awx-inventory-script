@@ -17,6 +17,8 @@ compose:
 
 ```
 
+More details about [NetBox inventory source](https://docs.ansible.com/ansible/latest/plugins/inventory/netbox.html "Link")
+
 2) In AWX 'Inventory Scripts' create new script which will generate JSON output:
 ```bash
 #!/usr/bin/env bash
