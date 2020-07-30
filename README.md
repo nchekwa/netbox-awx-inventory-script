@@ -17,12 +17,12 @@ compose:
 
 ```
 
-2) In AWX section scripts:
+2) In AWX 'Inventory Scripts' create new script which will generate JSON output:
 ```bash
 #!/usr/bin/env bash
 ansible-inventory -v --list -i /opt/scripts/netbox_inventory.yml
 ```
-
+![Screenshot](awx_inventory.png)
 
 
 # Exemple run output from script:
