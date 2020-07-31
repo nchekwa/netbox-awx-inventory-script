@@ -1,10 +1,10 @@
 # Create inventory in Ansible Tower (AWX) based on default netbox Ansbile plugin
 
-<mark>
-Before you start:<br>
-Please note that all this was done on **OLD** legacy netbox ansible plugin.<br>
-Right now there is more advanced library to manage netbox available under this [Link](https://github.com/netbox-community/ansible_modules)
-</mark>
+
+ Before you start:<br>
+ Please note that all this was done on **OLD** legacy netbox ansible plugin.<br>
+ Right now there is more advanced library to manage netbox available under this [Link](https://github.com/netbox-community/ansible_modules)
+
 
 1) Put script ie. in /opt/scripts/pb.netbox_inventory.yml 
 
