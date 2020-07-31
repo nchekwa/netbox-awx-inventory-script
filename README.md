@@ -209,3 +209,67 @@ Fetching: http://192.168.254.90/api/virtualization/virtual-machines/?limit=0
 }
 
 ```
+
+
+# PATCH: inventory_flat.py
+![Screenshot](awx_inventory_flat.png)
+
+### Before:
+```json
+ "Spine-20": {
+                "ansible_host": "10.240.40.20",
+                "ansible_network_os": "junos",
+                "config_context": [
+                    {
+                        "ansible_password": "Juniper",
+                        "ansible_user": "root"
+                    }
+                ],
+                "device_roles": [
+                    "spine_switch"
+                ],
+                "device_types": [
+                    "vqfx-10000"
+                ],
+                "manufacturers": [
+                    "Juniper"
+                ],
+                "platforms": [
+                    "junos"
+                ],
+                "primary_ip4": "10.240.40.20",
+                "sites": [
+                    "Warsaw DC1"
+                ],
+                "tags": [
+                    "ERB"
+                ]
+```
+
+### With patch
+```json
+ "Spine-20": {
+                "ansible_host": "10.240.40.20",
+                "ansible_password": "Juniper",
+                "ansible_user": "root",                       <----------- !!!
+                "ansible_network_os": "junos",                <----------- !!!
+                "device_roles": [
+                    "spine_switch"
+                ],
+                "device_types": [
+                    "vqfx-10000"
+                ],
+                "manufacturers": [
+                    "Juniper"
+                ],
+                "platforms": [
+                    "junos"
+                ],
+                "primary_ip4": "10.240.40.20",
+                "sites": [
+                    "Warsaw DC1"
+                ],
+                "tags": [
+                    "ERB"
+                ]
+```
